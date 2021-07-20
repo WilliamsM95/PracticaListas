@@ -1,50 +1,50 @@
 package com.example.practicalistas;
 
 public class Respuesta {
-    int id_resp;
-    String respuesta;
-    String descripcion;
-    int id_pregunta;
+    int cod_resp;
+    int cod_preg;
+    String respuestas;
+    int valid;
 
-    public int getId_resp() {
-        return id_resp;
+    public int getCod_resp() {
+        return cod_resp;
     }
 
-    public void setId_resp(int id_resp) {
-        this.id_resp = id_resp;
+    public void setCod_resp(int cod_resp) {
+        this.cod_resp = cod_resp;
     }
 
-    public String getRespuesta() {
-        return respuesta;
+    public int getCod_preg() {
+        return cod_preg;
     }
 
-    public void setRespuesta(String respuesta) {
-        this.respuesta = respuesta;
+    public void setCod_preg(int cod_preg) {
+        this.cod_preg = cod_preg;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getRespuestas() {
+        return respuestas;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setRespuestas(String respuestas) {
+        this.respuestas = respuestas;
     }
 
-    public int getId_pregunta() {
-        return id_pregunta;
+    public int getValid() {
+        return valid;
     }
 
-    public void setId_pregunta(int id_pregunta) {
-        this.id_pregunta = id_pregunta;
+    public void setValid(int valid) {
+        this.valid = valid;
     }
 
     @Override
     public String toString() {
         return "Respuesta{" +
-                "id_resp=" + id_resp +
-                ", respuesta='" + respuesta + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", id_pregunta=" + id_pregunta +
+                "cod_resp=" + cod_resp +
+                ", cod_preg=" + cod_preg +
+                ", respuestas='" + respuestas + '\'' +
+                ", valid=" + valid +
                 '}';
     }
 }

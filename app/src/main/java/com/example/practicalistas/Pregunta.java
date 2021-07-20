@@ -4,60 +4,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pregunta {
-    int id_pregunta;
-    int id_juego;
-    String pregunta;
-    int tipo;
-    int leccion;
+    int cod_preg;
+    String preguntas;
+    String preg_nivel;
 
-    public int getId_pregunta() {
-        return id_pregunta;
+    public int getCod_preg() {
+        return cod_preg;
     }
 
-    public void setId_pregunta(int id_pregunta) {
-        this.id_pregunta = id_pregunta;
+    public void setCod_preg(int cod_preg) {
+        this.cod_preg = cod_preg;
     }
 
-    public int getId_juego() {
-        return id_juego;
+    public String getPreguntas() {
+        return preguntas;
     }
 
-    public void setId_juego(int id_juego) {
-        this.id_juego = id_juego;
+    public void setPreguntas(String preguntas) {
+        this.preguntas = preguntas;
     }
 
-    public String getPregunta() {
-        return pregunta;
+    public String getPreg_nivel() {
+        return preg_nivel;
     }
 
-    public void setPregunta(String pregunta) {
-        this.pregunta = pregunta;
-    }
-
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
-    public int getLeccion() {
-        return leccion;
-    }
-
-    public void setLeccion(int leccion) {
-        this.leccion = leccion;
+    public void setPreg_nivel(String preg_nivel) {
+        this.preg_nivel = preg_nivel;
     }
 
     @Override
     public String toString() {
         return "Pregunta{" +
-                "id_pregunta=" + id_pregunta +
-                ", id_juego=" + id_juego +
-                ", pregunta='" + pregunta + '\'' +
-                ", tipo=" + tipo +
-                ", leccion=" + leccion +
+                "cod_preg=" + cod_preg +
+                ", preguntas='" + preguntas + '\'' +
+                ", preg_nivel='" + preg_nivel + '\'' +
                 '}';
     }
 }
